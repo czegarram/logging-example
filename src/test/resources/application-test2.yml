@@ -1,0 +1,8 @@
+custom:
+  logToFile: false
+  logToConsole: false
+  logToDatabase: false
+  logMessage: false
+  logWarning: false
+  logError: false
+  file: /Users/zegarce/Document

@@ -1,0 +1,15 @@
+spring:
+  h2:
+    console:
+      enabled: true
+
+custom:
+  logToFile: false
+  logToConsole: false
+  logToDatabase: false
+  logMessage: false
+  logWarning: false
+  logError: false
+  file: /Users/zegarce/Documents
+
+

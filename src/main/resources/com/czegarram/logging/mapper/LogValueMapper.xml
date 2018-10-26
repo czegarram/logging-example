@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="com.czegarram.logging.mapper.LogValueMapper">
+
+    <resultMap id="default" type="LogValue">
+        <id column="id" property="id" jdbcType="INTEGER" />
+        <result column="message" property="message" jdbcType="VARCHAR" />
+        <result column="logType" property="logType" typeHandler="org.apache.ibatis.type.EnumOrdinalTypeHandler" />
+    </resultMap>
+
+    <insert id="insert" parameterType="LogValue">
+        insert into Log_Values (message, logType)
+        values (#{message, jdbcType=VARCHAR}, #{logType, typeHandler=org.apache.ibatis.type.EnumOrdinalTypeHandler})
+    </insert>
+
+</mapper>
